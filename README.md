@@ -1,3 +1,5 @@
+> 该版本仅适用于 Gitea，且未经过完全测试
+
 <div align="center">
     <h1>Repo2Lark</h1>
     <a href="https://pypi.org/project/Repo2Lark/"><img src="https://img.shields.io/pypi/v/Repo2Lark" alt="PyPI"></a>

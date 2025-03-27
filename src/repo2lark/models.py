@@ -9,15 +9,19 @@ class Repository(BaseModel):
     full_name: str
 
 
-class Pusher(BaseModel):
+class GitHubPusher(BaseModel):
     date: Optional[str] = None
     email: Optional[str] = None
     name: str
     username: Optional[str] = None
 
 
-Author = Pusher
-Committer = Pusher
+class Pusher(BaseModel):
+    login: str
+
+
+Author = GitHubPusher
+Committer = GitHubPusher
 
 
 class HeadCommit(BaseModel):

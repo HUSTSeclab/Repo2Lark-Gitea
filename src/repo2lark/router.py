@@ -72,7 +72,7 @@ async def webhook_urlencoded(
                 lark_webhook_url=lark_webhook_url,
                 lark_webhook_secret=lark_webhook_secret,
                 variables={
-                    "commiter": params.pusher.name,
+                    "commiter": params.pusher.login,
                     "repository": params.repository.full_name,
                     "author": params.head_commit.author.name,
                     "branch": params.ref,
